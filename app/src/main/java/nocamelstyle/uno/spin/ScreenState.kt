@@ -1,6 +1,8 @@
 package nocamelstyle.uno.spin
 
+import nocamelstyle.uno.spin.Result
+
 sealed class ScreenState {
     object Animation : ScreenState()
-    class Result(val item: Int) : ScreenState
+    class Card(val item: Result) : ScreenState()
 }
